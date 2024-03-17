@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+		<title>Interactive Dice Roller</title>
+	</head>
+	<body>
+		<h1>Interactive Dice Roller</h1>
+		<p>Dice Pool:</p>
+		<button onclick="if(parseInt(pool.innerText) != 1){pool.innerText = parseInt(pool.innerText) - 1;}"><strong>-</strong></button> <h2 id="pool">1</h2> <button onclick="pool.innerText = parseInt(pool.innerText) + 1;"><strong>+</strong></button>
+		<br><br><button onclick="displayRoll()">Roll</button><br><br>
+		<table id="resultsTable"></table>
+		<p id="resultsText"></p>
+		<footer>
+			<p>Dice icons courtesy of <a href="https://commons.wikimedia.org/wiki/File:Die_face_4b.svg">Mliu92</a>, <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>, via Wikimedia Commons</p>
+		</footer>
+	</body>
+</html>
